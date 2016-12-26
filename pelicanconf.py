@@ -6,7 +6,7 @@ AUTHOR = 'marcelo.ferselva'
 SITENAME = 'Marcelo Ferselva'
 SITEURL = ''
 
-THEME = '../flex'
+THEME = 'flex-theme'
 PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
