@@ -2,37 +2,43 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Maarcelo Ferselva'
+AUTHOR = 'Marcelo Ferselva'
 SITENAME = 'REVAUT'
 SITETITLE = 'RevAut'
 SITESUBTITLE = 'REVolução AUTogestionária'
 
-SITEURL = ''
+SITEURL = 'http://localhost:8000'
 
-THEME = 'flex-theme'
+THEME = './flex-theme'
 PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'pt'
 
-# Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),)
+MAIN_MENU = True
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),)
+
+SOCIAL = (('github', 'https://github.com/marcfers'),
+	  ('rss', 'https://marcfers.github.io/revaut/feeds/all.atom.xml'))
+
+MENUITEMS = (('Archives', '/archives.html'),
+	     ('Categories', '/categories.html'),
+	     ('Tags', '/tags.html'),)
+
+CC_LICENSE = {
+	'name': 'Creative Commons Attribution-NonCommercial-ShareAlike',
+	'version': '4.0',
+	'slug': 'by-nc-sa'
+}
+
+COPYRIGHT_YEAR = 2017
 
 DEFAULT_PAGINATION = 10
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
