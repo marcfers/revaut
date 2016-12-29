@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-set -e
+source virtualenvwrapper.sh
+workon workspacePelican
 
 git clean -fdX
 pelican content -o output -s pelicanconf.py

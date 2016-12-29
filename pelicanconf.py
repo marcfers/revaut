@@ -7,6 +7,7 @@ SITENAME = 'REVAUT'
 SITETITLE = 'RevAut'
 SITESUBTITLE = 'REVolução AUTogestionária'
 
+SITEPATH = '/revaut'
 SITEURL = 'http://localhost:8000'
 
 THEME = './flex-theme'
@@ -24,14 +25,14 @@ AUTHOR_FEED_RSS = None
 
 MAIN_MENU = True
 
-LINKS = (('Pelican', 'http://getpelican.com/'),)
+LINKS = (('Wiki', 'http://wikiautogestionaria.com'),)
 
 SOCIAL = (('github', 'https://github.com/marcfers'),
-	  ('rss', 'https://marcfers.github.io/revaut/feeds/all.atom.xml'))
+	  ('rss', SITEPATH + '/feeds/all.atom.xml'))
 
-MENUITEMS = (('Archives', '/archives.html'),
-	     ('Categories', '/categories.html'),
-	     ('Tags', '/tags.html'),)
+MENUITEMS = (('Arquivos', SITEPATH + '/archives.html'),
+	     ('Categorias', SITEPATH + '/categories.html'),
+	     ('Etiquetas', SITEPATH + '/tags.html'),)
 
 CC_LICENSE = {
 	'name': 'Creative Commons Attribution-NonCommercial-ShareAlike',
