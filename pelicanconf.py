@@ -8,7 +8,7 @@ SITETITLE = 'RevAut'
 SITESUBTITLE = 'REVolução AUTogestionária'
 
 SITEPATH = '/revaut'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000' + SITEPATH
 
 THEME = './flex-theme'
 PATH = 'content'

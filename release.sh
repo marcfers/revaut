@@ -4,6 +4,6 @@ source virtualenvwrapper.sh
 workon workspacePelican
 
 git clean -fdX
-pelican content -o output -s publishconf.py
-ghp-import output
+pelican content -o revaut -s publishconf.py
+ghp-import revaut
 git push origin gh-pages
